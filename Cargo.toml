@@ -1,0 +1,10 @@
+[package]
+name = "algorithm_in_rust"
+version = "0.1.0"
+authors = ["jysh1214 <jyxemperor@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+algorithm = {path = "./algorithm"}

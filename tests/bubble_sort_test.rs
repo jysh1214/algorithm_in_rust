@@ -15,6 +15,20 @@ fn str_increase_order_test() {
 }
 
 #[test]
+fn one_size_list_test() {
+    let mut a = [0];
+    algorithm::sorting::bubble_sort::bubble_sort(&mut a);
+    assert_eq!(a, [0]);
+}
+
+#[test]
+fn empty_list_test() {
+    let mut a: Vec<i32> = vec![];
+    algorithm::sorting::bubble_sort::bubble_sort(&mut a);
+    assert_eq!(a, []);
+}
+
+#[test]
 #[should_panic]
 fn panic_test() {
     let mut a = [3, 2, 5, 4, 1];

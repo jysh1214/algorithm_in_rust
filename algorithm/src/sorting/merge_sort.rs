@@ -1,6 +1,6 @@
 pub fn merge_sort<T: Ord + Copy>(list: &mut [T]) {
     let len = list.len();
-    if len == 1 {
+    if len <= 1 {
         return;
     } else {
         let mid = len / 2;
